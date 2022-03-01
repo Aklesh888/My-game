@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://playbutton.gd" type="Script" id=1]
+[ext_resource path="res://assets/platformer-p15-assets/more fonts/KiriFont.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 220
+outline_size = 10
+outline_color = Color( 0.454902, 0.121569, 0.121569, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 5.33936
+margin_top = 10.6788
+margin_right = 2633.34
+margin_bottom = 1536.68
+color = Color( 0.0431373, 0.0352941, 0.937255, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="playbutton" type="Button" parent="."]
+margin_left = 941.622
+margin_top = 950.921
+margin_right = 1620.62
+margin_bottom = 1223.92
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0.941176, 0.796078, 0, 1 )
+custom_colors/font_color = Color( 0.984314, 0.984314, 0.996078, 1 )
+custom_colors/font_color_hover = Color( 0.898039, 0.0588235, 0.231373, 1 )
+custom_colors/font_color_pressed = Color( 0.909804, 0, 0, 1 )
+text = "PLAY"
+flat = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 531.347
+margin_top = 256.465
+margin_right = 3108.35
+margin_bottom = 563.465
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 0.996078, 0.996078, 1 )
+custom_colors/font_outline_modulate = Color( 0.945098, 0.0392157, 0.0392157, 1 )
+text = "YOU WIN!!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="playbutton" to="playbutton" method="_on_playbutton_pressed"]

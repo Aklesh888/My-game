@@ -1,0 +1,56 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/PNG/Collectable Object/Coin_01.png" type="Texture" id=1]
+[ext_resource path="res://assets/PNG/Collectable Object/Coin_06.png" type="Texture" id=2]
+[ext_resource path="res://assets/PNG/Collectable Object/Coin_04.png" type="Texture" id=3]
+[ext_resource path="res://assets/PNG/Collectable Object/Coin_05.png" type="Texture" id=4]
+[ext_resource path="res://assets/PNG/Collectable Object/Coin_03.png" type="Texture" id=5]
+[ext_resource path="res://assets/PNG/Collectable Object/Coin_02.png" type="Texture" id=6]
+[ext_resource path="res://coins.gd" type="Script" id=7]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 90.4455
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "coins",
+"speed": 10.0
+} ]
+
+[sub_resource type="Animation" id=3]
+resource_name = "updown"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -166.498 ), Vector2( -1.68182, -127.816 ) ]
+}
+
+[node name="coins" type="Area2D"]
+collision_layer = 0
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 2 )
+animation = "coins"
+frame = 6
+playing = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/updown = SubResource( 3 )
+
+[connection signal="body_entered" from="." to="." method="_on_coins_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

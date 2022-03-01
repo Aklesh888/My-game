@@ -1,0 +1,161 @@
+[gd_resource type="SpriteFrames" load_steps=102 format=2]
+
+[ext_resource path="res://ninja/Jump__003.png" type="Texture" id=1]
+[ext_resource path="res://ninja/Run__000.png" type="Texture" id=2]
+[ext_resource path="res://ninja/Jump_Throw__000.png" type="Texture" id=3]
+[ext_resource path="res://ninja/Climb_002.png" type="Texture" id=4]
+[ext_resource path="res://ninja/Jump_Attack__000.png" type="Texture" id=5]
+[ext_resource path="res://ninja/Jump_Attack__005.png" type="Texture" id=6]
+[ext_resource path="res://ninja/Jump_Attack__007.png" type="Texture" id=7]
+[ext_resource path="res://ninja/Climb_009.png" type="Texture" id=8]
+[ext_resource path="res://ninja/Run__001.png" type="Texture" id=9]
+[ext_resource path="res://ninja/Run__002.png" type="Texture" id=10]
+[ext_resource path="res://ninja/Run__003.png" type="Texture" id=11]
+[ext_resource path="res://ninja/Climb_004.png" type="Texture" id=12]
+[ext_resource path="res://ninja/Climb_008.png" type="Texture" id=13]
+[ext_resource path="res://ninja/Jump_Throw__001.png" type="Texture" id=14]
+[ext_resource path="res://ninja/Jump_Throw__008.png" type="Texture" id=15]
+[ext_resource path="res://ninja/Attack__009.png" type="Texture" id=16]
+[ext_resource path="res://ninja/Jump_Throw__009.png" type="Texture" id=17]
+[ext_resource path="res://ninja/Run__006.png" type="Texture" id=18]
+[ext_resource path="res://ninja/Run__007.png" type="Texture" id=19]
+[ext_resource path="res://ninja/Run__004.png" type="Texture" id=20]
+[ext_resource path="res://ninja/Attack__006.png" type="Texture" id=21]
+[ext_resource path="res://ninja/Dead__007.png" type="Texture" id=22]
+[ext_resource path="res://ninja/Jump_Attack__001.png" type="Texture" id=23]
+[ext_resource path="res://ninja/Dead__008.png" type="Texture" id=24]
+[ext_resource path="res://ninja/Jump_Attack__002.png" type="Texture" id=25]
+[ext_resource path="res://ninja/Climb_006.png" type="Texture" id=26]
+[ext_resource path="res://ninja/Run__005.png" type="Texture" id=27]
+[ext_resource path="res://ninja/Run__008.png" type="Texture" id=28]
+[ext_resource path="res://ninja/Glide_006.png" type="Texture" id=29]
+[ext_resource path="res://ninja/Attack__007.png" type="Texture" id=30]
+[ext_resource path="res://ninja/Dead__006.png" type="Texture" id=31]
+[ext_resource path="res://ninja/Climb_001.png" type="Texture" id=32]
+[ext_resource path="res://ninja/Dead__009.png" type="Texture" id=33]
+[ext_resource path="res://ninja/Glide_007.png" type="Texture" id=34]
+[ext_resource path="res://ninja/Glide_008.png" type="Texture" id=35]
+[ext_resource path="res://ninja/Jump_Attack__006.png" type="Texture" id=36]
+[ext_resource path="res://ninja/Climb_007.png" type="Texture" id=37]
+[ext_resource path="res://ninja/Jump_Throw__002.png" type="Texture" id=38]
+[ext_resource path="res://ninja/Jump_Attack__008.png" type="Texture" id=39]
+[ext_resource path="res://ninja/Glide_001.png" type="Texture" id=40]
+[ext_resource path="res://ninja/Jump_Throw__007.png" type="Texture" id=41]
+[ext_resource path="res://ninja/Jump_Attack__009.png" type="Texture" id=42]
+[ext_resource path="res://ninja/Climb_003.png" type="Texture" id=43]
+[ext_resource path="res://ninja/Dead__001.png" type="Texture" id=44]
+[ext_resource path="res://ninja/Dead__004.png" type="Texture" id=45]
+[ext_resource path="res://ninja/Dead__000.png" type="Texture" id=46]
+[ext_resource path="res://ninja/Jump_Attack__004.png" type="Texture" id=47]
+[ext_resource path="res://ninja/Climb_005.png" type="Texture" id=48]
+[ext_resource path="res://ninja/Dead__003.png" type="Texture" id=49]
+[ext_resource path="res://ninja/Glide_009.png" type="Texture" id=50]
+[ext_resource path="res://ninja/Glide_004.png" type="Texture" id=51]
+[ext_resource path="res://ninja/Jump_Throw__003.png" type="Texture" id=52]
+[ext_resource path="res://ninja/Dead__005.png" type="Texture" id=53]
+[ext_resource path="res://ninja/Climb_000.png" type="Texture" id=54]
+[ext_resource path="res://ninja/Glide_002.png" type="Texture" id=55]
+[ext_resource path="res://ninja/Glide_003.png" type="Texture" id=56]
+[ext_resource path="res://ninja/Glide_005.png" type="Texture" id=57]
+[ext_resource path="res://ninja/Jump_Throw__004.png" type="Texture" id=58]
+[ext_resource path="res://ninja/Glide_000.png" type="Texture" id=59]
+[ext_resource path="res://ninja/Jump_Throw__005.png" type="Texture" id=60]
+[ext_resource path="res://ninja/Jump_Throw__006.png" type="Texture" id=61]
+[ext_resource path="res://ninja/Jump_Attack__003.png" type="Texture" id=62]
+[ext_resource path="res://ninja/Attack__008.png" type="Texture" id=63]
+[ext_resource path="res://ninja/Dead__002.png" type="Texture" id=64]
+[ext_resource path="res://ninja/Slide__000.png" type="Texture" id=65]
+[ext_resource path="res://ninja/Slide__001.png" type="Texture" id=66]
+[ext_resource path="res://ninja/Slide__003.png" type="Texture" id=67]
+[ext_resource path="res://ninja/Slide__004.png" type="Texture" id=68]
+[ext_resource path="res://ninja/Slide__002.png" type="Texture" id=69]
+[ext_resource path="res://ninja/Run__009.png" type="Texture" id=70]
+[ext_resource path="res://ninja/Throw__005.png" type="Texture" id=71]
+[ext_resource path="res://ninja/Throw__000.png" type="Texture" id=72]
+[ext_resource path="res://ninja/Slide__009.png" type="Texture" id=73]
+[ext_resource path="res://ninja/Throw__002.png" type="Texture" id=74]
+[ext_resource path="res://ninja/Slide__007.png" type="Texture" id=75]
+[ext_resource path="res://ninja/Slide__005.png" type="Texture" id=76]
+[ext_resource path="res://ninja/Slide__006.png" type="Texture" id=77]
+[ext_resource path="res://ninja/Throw__006.png" type="Texture" id=78]
+[ext_resource path="res://ninja/Throw__007.png" type="Texture" id=79]
+[ext_resource path="res://ninja/Throw__001.png" type="Texture" id=80]
+[ext_resource path="res://ninja/Throw__004.png" type="Texture" id=81]
+[ext_resource path="res://ninja/Slide__008.png" type="Texture" id=82]
+[ext_resource path="res://ninja/Throw__008.png" type="Texture" id=83]
+[ext_resource path="res://ninja/Throw__003.png" type="Texture" id=84]
+[ext_resource path="res://ninja/Throw__009.png" type="Texture" id=85]
+[ext_resource path="res://ninja/Idle__008.png" type="Texture" id=86]
+[ext_resource path="res://ninja/Idle__009.png" type="Texture" id=87]
+[ext_resource path="res://ninja/Idle__005.png" type="Texture" id=88]
+[ext_resource path="res://ninja/Idle__004.png" type="Texture" id=89]
+[ext_resource path="res://ninja/Idle__006.png" type="Texture" id=90]
+[ext_resource path="res://ninja/Idle__007.png" type="Texture" id=91]
+[ext_resource path="res://ninja/Attack__002.png" type="Texture" id=92]
+[ext_resource path="res://ninja/Attack__001.png" type="Texture" id=93]
+[ext_resource path="res://ninja/Attack__000.png" type="Texture" id=94]
+[ext_resource path="res://ninja/Attack__003.png" type="Texture" id=95]
+[ext_resource path="res://ninja/Attack__004.png" type="Texture" id=96]
+[ext_resource path="res://ninja/Idle__001.png" type="Texture" id=97]
+[ext_resource path="res://ninja/Attack__005.png" type="Texture" id=98]
+[ext_resource path="res://ninja/Idle__002.png" type="Texture" id=99]
+[ext_resource path="res://ninja/Idle__003.png" type="Texture" id=100]
+[ext_resource path="res://ninja/Idle__000.png" type="Texture" id=101]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 69 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 75 ), ExtResource( 82 ), ExtResource( 73 ) ],
+"loop": false,
+"name": "slide",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 101 ), ExtResource( 87 ), ExtResource( 97 ), ExtResource( 99 ), ExtResource( 89 ), ExtResource( 100 ), ExtResource( 88 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 86 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 93 ), ExtResource( 92 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 98 ), ExtResource( 30 ), ExtResource( 21 ), ExtResource( 63 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "attack",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 20 ), ExtResource( 27 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 28 ), ExtResource( 70 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 54 ), ExtResource( 32 ), ExtResource( 4 ), ExtResource( 43 ), ExtResource( 12 ), ExtResource( 48 ), ExtResource( 26 ), ExtResource( 37 ), ExtResource( 13 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "climb",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 46 ), ExtResource( 44 ), ExtResource( 64 ), ExtResource( 49 ), ExtResource( 45 ), ExtResource( 53 ), ExtResource( 31 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": false,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 72 ), ExtResource( 80 ), ExtResource( 74 ), ExtResource( 84 ), ExtResource( 81 ), ExtResource( 71 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 83 ), ExtResource( 85 ) ],
+"loop": false,
+"name": "throw",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 59 ), ExtResource( 40 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 51 ), ExtResource( 57 ), ExtResource( 29 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "glide",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 62 ), ExtResource( 47 ), ExtResource( 6 ), ExtResource( 36 ), ExtResource( 7 ), ExtResource( 39 ), ExtResource( 42 ) ],
+"loop": true,
+"name": "Jumpattack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 14 ), ExtResource( 38 ), ExtResource( 52 ), ExtResource( 58 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 41 ), ExtResource( 15 ), ExtResource( 17 ) ],
+"loop": false,
+"name": "jumpthrow",
+"speed": 5.0
+} ]

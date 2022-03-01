@@ -1,0 +1,73 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://ghost.gd" type="Script" id=1]
+[ext_resource path="res://assets/PNG/Enemies/Ghost/Enemies_15.png" type="Texture" id=2]
+[ext_resource path="res://assets/PNG/Enemies/Ghost/Enemies_07.png" type="Texture" id=3]
+[ext_resource path="res://assets/PNG/Enemies/Ghost/Enemies_09.png" type="Texture" id=4]
+[ext_resource path="res://assets/PNG/Enemies/Ghost/Enemies_11.png" type="Texture" id=5]
+[ext_resource path="res://assets/PNG/Enemies/Ghost/Enemies_13.png" type="Texture" id=6]
+[ext_resource path="res://assets/PNG/Enemies/Ghost/Enemies_05.png" type="Texture" id=7]
+[ext_resource path="res://assets/PNG/Enemies/Ghost/Enemies_03.png" type="Texture" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 38.8685, 126.68 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "ghost",
+"speed": 4.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 49.2642, 131.298 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 466.573, 129.669 )
+
+[node name="ghost" type="KinematicBody2D"]
+scale = Vector2( 1.7, 1.7 )
+collision_layer = 16
+collision_mask = 35
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 24.4297 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1.38379, 8.97993 )
+frames = SubResource( 2 )
+animation = "ghost"
+frame = 2
+playing = true
+flip_h = true
+
+[node name="sieschecker" type="Area2D" parent="."]
+position = Vector2( -2.84194, 0.881357 )
+collision_layer = 16
+collision_mask = 33
+
+[node name="sidecheckercollision" type="CollisionShape2D" parent="sieschecker"]
+position = Vector2( 5.92904, 24.4573 )
+shape = SubResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="attackarea" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attackarea"]
+position = Vector2( 7.27503, 22.9153 )
+shape = SubResource( 4 )
+
+[node name="floorchecker" type="RayCast2D" parent="."]
+position = Vector2( 0, 153.311 )
+enabled = true
+collision_mask = 2
+
+[connection signal="body_entered" from="sieschecker" to="." method="_on_sieschecker_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="attackarea" to="." method="_on_attackarea_body_entered"]
+[connection signal="body_exited" from="attackarea" to="." method="_on_attackarea_body_exited"]

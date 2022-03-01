@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://kakashi_dabs.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://kakashi.gd" type="Script" id=2]
+[ext_resource path="res://attack.gd" type="Script" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 85.8763
+height = 273.303
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 77.6277, 67.6802 )
+
+[node name="kakashi" type="KinematicBody2D" groups=[
+"player",
+]]
+position = Vector2( 2.51984, 0 )
+script = ExtResource( 2 )
+
+[node name="sensei" type="AnimatedSprite" parent="."]
+position = Vector2( -0.892029, -1.51137 )
+frames = ExtResource( 1 )
+animation = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="attack" type="Area2D" parent="." groups=[
+"hit",
+]]
+collision_mask = 16
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack" groups=[
+"sword",
+]]
+position = Vector2( 166.877, 0 )
+shape = SubResource( 2 )
+disabled = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 132.936, 25.4559 )
+
+[connection signal="animation_finished" from="sensei" to="." method="_on_sensei_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="attack" to="attack" method="_on_attack_body_entered"]
